@@ -22,4 +22,5 @@ If you had run report on your account - please do not hesitate to [Share Your Re
 
 ### Special Thanks to Jordan Peterson
 > Aim lower. Search until you find something that bothers you, that you could fix, that you would fix, and then fix it. That might be enough for the day.
+
 https://www.youtube.com/watch?v=o73pqQ9Gzt4
