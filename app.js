@@ -6,30 +6,31 @@ document.getElementById("AWS_SECRET_ACCESS_TOKEN").value = localStorage.getItem(
 var log = document.getElementById("log");
 
 var createReport = function() {
-        try {
-            AWS.config = new AWS.Config({
-                accessKeyId: document.getElementById("AWS_ACCESS_KEY_ID").value,
-                secretAccessKey: document.getElementById("AWS_SECRET_ACCESS_KEY").value,
-                sessionToken: document.getElementById("AWS_SECRET_ACCESS_TOKEN").value,
-                region: "us-east-1"
-            });
-            localStorage.setItem('AWS_ACCESS_KEY_ID', document.getElementById("AWS_ACCESS_KEY_ID").value);
-            localStorage.setItem('AWS_SECRET_ACCESS_KEY', document.getElementById("AWS_SECRET_ACCESS_KEY").value);
-            localStorage.setItem('AWS_SECRET_ACCESS_TOKEN', document.getElementById("AWS_SECRET_ACCESS_TOKEN").value);
+    AWS.config = new AWS.Config({
+        accessKeyId: document.getElementById("AWS_ACCESS_KEY_ID").value,
+        secretAccessKey: document.getElementById("AWS_SECRET_ACCESS_KEY").value,
+        sessionToken: document.getElementById("AWS_SECRET_ACCESS_TOKEN").value,
+        region: "us-east-1"
+    });
+    localStorage.setItem('AWS_ACCESS_KEY_ID', document.getElementById("AWS_ACCESS_KEY_ID").value);
+    localStorage.setItem('AWS_SECRET_ACCESS_KEY', document.getElementById("AWS_SECRET_ACCESS_KEY").value);
+    localStorage.setItem('AWS_SECRET_ACCESS_TOKEN', document.getElementById("AWS_SECRET_ACCESS_TOKEN").value);
 
-            f = async function() {
-                console.log("Start")
-                sum  = 0.0
-                sum += await volumesReport()
-                sum += await rdsReport()
-                sum *= 12
-                log.innerHTML += "You have " + (sum.toFixed(0)) + "$ wasted on AWS every year";
-                console.log("Finished")
-            }
-            f()
+    f = async function() {
+        try {
+            log.innerHTML = "";
+            console.log("Start")
+            sum  = 0.0
+            sum += await volumesReport()
+            sum += await rdsReport()
+            sum *= 12
+            log.innerHTML += 'You have <b style="color:red;">' + (sum.toFixed(0)) + '$</b> wasted on AWS every year. See console log for more details.';
+            console.log("Finished")
         } catch(ex) {
-            console.log(ex)
+            log.innerHTML += ex;
         }
+    }
+    f()
     return false
 }
 
