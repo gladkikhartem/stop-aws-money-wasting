@@ -12,7 +12,7 @@ I've saved $200k/year on AWS by using this tool and I belive you can save money 
 ### Is it accurate?
 **YES**. Only high-accuracy, easy-to-fix results are posted.
 
-### Is it important?
+### Why is it important?
 Wasting money wastes people's lives. Don't waste money - burn them instead.
 
 ![Joker Burns Money](https://storage.googleapis.com/artem_and_co/main-qimg-869a911f3051d6942a7e73509e3b66b5.jpeg)
