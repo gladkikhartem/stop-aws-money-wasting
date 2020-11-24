@@ -13,15 +13,22 @@ I've saved $200k/year on AWS by using this tool and I belive you can save money 
 **YES**. Only high-accuracy, easy-to-fix results are posted.
 
 ### Why is it important?
-Wasting money wastes people's lives. Don't waste money - burn them instead.
+Wasting money wastes people's lives. Don't waste money on AWS - save and burn them instead.
 
 ![Joker Burns Money](https://storage.googleapis.com/artem_and_co/main-qimg-869a911f3051d6942a7e73509e3b66b5.jpeg)
+
+### What kind of AWS wastage is analyzed?
+- EC2 Volumes that are not attached to anything
+- EC2 Instances that were stopped (you still getting billed for Volume attached)
+- RDS snapshots that have no RDS DB associated with them
+- RDS databases that have 0 connections // not implemented yet
 
 
 ### How can I contribute?
 - [Share your cost-savings](https://docs.google.com/forms/d/e/1FAIpQLSdRy50XmnoqVYMRFfdZ7WCLYcA86u_uhr2gEIXa-9j6_fFZcw/viewform?usp=sf_link)
 - Share your stories of stupidly wasting money on AWS by creating a Github issue
 - Share this tool with anyone who uses AWS extensively
+- PRs or real-world wastage examples are welcome
 
 ### Special Thanks to Jordan Peterson
 This project wouldn't happen without his Youtube lectures
