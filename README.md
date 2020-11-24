@@ -1,6 +1,8 @@
 # Stop wasting money on AWS right now!!!
 [Scan your account](https://gladkikhartem.github.io/stop-aws-money-wasting/) and get instant report on how much AWS resources you are wasting.
 
+I've saved $200k/year on AWS by using this tool and I belive you can save money too.
+
 ### Is it safe?
 **YES**. Account credentials are stored only in your browser local storage.
 
@@ -10,8 +12,11 @@
 ### Is it accurate?
 **YES**. Only high-accuracy, easy-to-fix results are posted.
 
-### Is it profitable?
-[**YES**](https://docs.google.com/spreadsheets/d/1S7VxGU8dyhZgQXwScOZTtxAaWsZE6PrH5bG7QRQx0AY/edit?usp=sharing)
+### Is it important?
+I believe wasting money is not good
+
+![Joker Burns Money](https://storage.googleapis.com/artem_and_co/main-qimg-869a911f3051d6942a7e73509e3b66b5.jpeg)
+
 
 ### How can I contribute?
 - [Share your cost-savings](https://docs.google.com/forms/d/e/1FAIpQLSdRy50XmnoqVYMRFfdZ7WCLYcA86u_uhr2gEIXa-9j6_fFZcw/viewform?usp=sf_link)
