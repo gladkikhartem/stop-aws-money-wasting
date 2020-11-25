@@ -13,7 +13,7 @@ I've saved $200k/year on AWS by using this tool and I belive you can save money 
 **YES**. Only high-accuracy, easy-to-fix results are posted.
 
 ### Why is it important?
-Wasting money wastes people's lives. Don't waste money on AWS - save and burn them instead.
+Wasting money wastes people's lives. Don't waste money on AWS - donate them instead.
 
 ![Joker Burns Money](https://storage.googleapis.com/artem_and_co/main-qimg-869a911f3051d6942a7e73509e3b66b5.jpeg)
 
