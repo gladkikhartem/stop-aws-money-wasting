@@ -15,23 +15,37 @@
                 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                 <img alt="" border="0" src="https://www.paypal.com/en_BY/i/scr/pixel.gif" width="1" height="1" />
                 </form>
-                <h4> &nbsp; AWS Cost saving scanner v1.0</h4>
+                <h4> &nbsp; AWS Cost savings scanner v1.0</h4>
             <form onsubmit="return createReport()">
             <div class="form-group col-6">
                 <label for="AWS_ACCESS_KEY_ID">ACCESS_KEY_ID</label>
-                <input class="form-control" id="AWS_ACCESS_KEY_ID" value="***stored only in browser***" />
+                <input class="form-control" id="AWS_ACCESS_KEY_ID"/>
             </div>
             <div class="form-group col-6">
                 <label for="AWS_SECRET_ACCESS_KEY">AWS_SECRET_ACCESS_KEY</label>
-                <input class="form-control" id="AWS_SECRET_ACCESS_KEY" value="***stored only in browser***" />
+                <input class="form-control" id="AWS_SECRET_ACCESS_KEY"/>
             </div>
             <div class="form-group col-6">
-                <label for="AWS_SECRET_ACCESS_TOKEN">AWS_SECRET_ACCESS_TOKEN</label>
-                <input class="form-control" id="AWS_SECRET_ACCESS_TOKEN" value="" />
+                <label for="AWS_SECRET_ACCESS_TOKEN">AWS_SECRET_ACCESS_TOKEN (optional)</label>
+                <input class="form-control" id="AWS_SECRET_ACCESS_TOKEN"/>
             </div>
             <input class="form-control col-6" type="submit" value="CreateReport">
             </form>
-            <h4 id="log"></h4>
+            <div class="progress col-6">
+                <div id="prog-bar" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            </div>
+            <h2 id="result"  col-6"></h2>
+            <table class="table col-6"  style="display:none">
+                    <thead>
+                            <th>Region</th>
+                            <th>ID</th>
+                            <th>$/mo</th>
+                            <th>Description</th>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+            </table>
+            <div id="log" style="max-height: 200px;" class="col-6 overflow-auto"></div>
     </body>
         
     <script src="app.js"></script>
