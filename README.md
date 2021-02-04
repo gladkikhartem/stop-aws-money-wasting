@@ -1,10 +1,10 @@
 # Stop wasting money on AWS right now!!!
 [Scan your account](https://gladkikhartem.github.io/stop-aws-money-wasting/) and get instant report on how much AWS resources you are wasting.
 
-I've saved $200k/year on AWS by using this tool and I belive you can save money too.
+I've saved $350k/year on AWS by using this tool and I belive you can save money too.
 
 ### Is it safe?
-**YES**. Account credentials are stored only in your browser local storage.
+**YES**. Account credentials are stored only in your browser local storage. You can verify the source code right in the browser console.
 
 ### Is it free?
 **YES**. Reporting is absolutely free.
@@ -21,7 +21,8 @@ Wasting money wastes people's lives. Don't waste money on AWS - donate them inst
 - EC2 Volumes that are not attached to anything
 - EC2 Instances that were stopped (you still getting billed for Volume attached)
 - RDS snapshots that have no RDS DB associated with them
-- RDS databases that have 0 connections // not implemented yet
+- RDS databases that have 0 connections
+- Application, Classic, Network ELBs that do not handle any traffic
 
 
 ### How can I contribute?

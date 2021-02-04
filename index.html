@@ -35,7 +35,8 @@
                 <div id="prog-bar" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
             </div>
             <h2 id="result"  col-6"></h2>
-            <table class="table col-6"  style="display:none">
+            <div id="log" style="max-height: 100px;" class="col-6 overflow-auto"></div>
+            <table class="table col-6">
                     <thead>
                             <th>Region</th>
                             <th>ID</th>
@@ -45,7 +46,6 @@
                     <tbody id="table-body">
                     </tbody>
             </table>
-            <div id="log" style="max-height: 200px;" class="col-6 overflow-auto"></div>
     </body>
         
     <script src="app.js"></script>
