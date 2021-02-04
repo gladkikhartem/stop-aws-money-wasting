@@ -15,7 +15,21 @@
                 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                 <img alt="" border="0" src="https://www.paypal.com/en_BY/i/scr/pixel.gif" width="1" height="1" />
                 </form>
-                <h4> &nbsp; AWS Cost savings scanner v1.0</h4>
+                <h3> &nbsp; AWS Cost savings scanner v1.0</h3>
+                <br>
+                <h2> &nbsp;  <b>READ THIS BEFORE PROVIDING YOUR AWS CREDENTIALS!!!</b> </h2>
+
+                </p> &nbsp; Generally you don't want to paste your AWS credentials on a public resource like this without security considerations. 
+                Especially if it's not your account and you're working for a company. 
+                <br> &nbsp; <b>This tools is not going to misuse your credentials, you can trust us)))</b>. But if you don't - you can try following:
+                <br> &nbsp; 1. Make sure your OS & browser is free of malware.
+                <br> &nbsp; 2. Create temporary READ ONLY credentials that you will delete after you're finished with reporting.
+                <br> &nbsp; 3. Limit the access for these credentials to be able to query only CW Metrics, EC2 & RDS ( we'll post AWS Roles json soon ) 
+                <br> &nbsp; 4. If you're working in the company - make sure your manager & security officer are aware of what you're doing
+                <br> &nbsp; 5. Find developer you trust to verify the tool source code or do it yourself
+                    
+                </p>
+                <br>
             <form onsubmit="return createReport()">
             <div class="form-group col-6">
                 <label for="AWS_ACCESS_KEY_ID">ACCESS_KEY_ID</label>
@@ -29,7 +43,7 @@
                 <label for="AWS_SECRET_ACCESS_TOKEN">AWS_SECRET_ACCESS_TOKEN (optional)</label>
                 <input class="form-control" id="AWS_SECRET_ACCESS_TOKEN"/>
             </div>
-            <input class="form-control col-6" type="submit" value="CreateReport">
+            <input class="form-control col-6 btn-primary" type="submit" value="CreateReport">
             </form>
             <div class="progress col-6">
                 <div id="prog-bar" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>

@@ -65,6 +65,9 @@ var createReport = function() {
         $('.progress').css("display","none")
         sum *= 12 // month to year. Annual savings look bigger)))
         document.getElementById("result").innerHTML += 'You have <b style="color:red;">' + (sum.toFixed(0)) + '$</b> wasted on AWS every year';
+        if (sum > 1000) {
+            document.getElementById("result").innerHTML += '. Please consider donating part of saved money to the project :)';
+        }
     }
     f()
     return false
