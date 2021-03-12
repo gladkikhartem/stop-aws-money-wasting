@@ -125,7 +125,7 @@ var loadBalancersReport = async function(reg) {
             Unit: "Count",
           }).promise()
           if (cwres.Datapoints.length == 0 || cwres.Datapoints[0].Sum == 0){
-            sum += 16 // $16 per month
+            sum += 16 // $16 per month for load balancer
             addTable(reg,lb.LoadBalancerName, 16, "classic load balancer did not have any requests in 30 days");
           }
     }
